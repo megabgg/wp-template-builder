@@ -1,7 +1,17 @@
 <?php
 
 /**
- * Rendering html
+ * Rendering html template
+ */
+function wtb_render_template($path, $data)
+{
+    get_header();
+    wtb_render_section($path, $data);
+    get_footer();
+}
+
+/**
+ * Rendering html section
  */
 function wtb_render_section($path, $data)
 {
