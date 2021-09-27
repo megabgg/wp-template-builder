@@ -1,15 +1,16 @@
 <?php
 
 $include_file_names = [
-    'post-types',
-    'actions',
-    'ajax',
     'admin',
-    'assets',
-    'data-filters',
+    'actions',
     'wtb-helpers',
+    'modules',
+    'post-types',
+    'data-filters',
+    'api',
+    'ajax',
+    'assets',
     'menus',
-    'api'
 ];
 
 foreach ($include_file_names as $file_name) {
