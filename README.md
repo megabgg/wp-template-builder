@@ -51,29 +51,29 @@ single.view.php
 Представления находятся в каталоге resources/views. 
 
 
-##Структура проекта
+## Структура проекта
 
 Весь необходимый функционал шаблона находится в папке includes в отдельных файлах. 
 
-###actions.php
+### actions.php
 ...
-###admin.php
+### admin.php
 ...
-###ajax.php
+### ajax.php
 ...
-###api.php
+### api.php
 ...
-###assets.php
+### assets.php
 ...
-###data-filters.php
+### data-filters.php
 ...
-###menus.php
+### menus.php
 ...
-###modules.php
+### modules.php
 ...
-###post-types.php
+### post-types.php
 ...
-###wtb-helpers.php
+### wtb-helpers.php
 
 Порядок подключения файлов определяется в functions.php, который находится в корне темы.
 
