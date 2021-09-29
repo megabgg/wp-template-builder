@@ -15,6 +15,9 @@ function wtb_render_template($path, $data)
  */
 function wtb_render_section($path, $data)
 {
+
+    do_action( 'wtb_rendering_section', $path, $data );
+
     if (defined('WTB_MODE')) {
         if (constant("WTB_MODE") == 'NO_VIEW') {
             echo $path;
