@@ -6,7 +6,7 @@
 function wtb_render_template($path, $data)
 {
     get_header();
-    wtb_render_section($path, $data);
+    wtb_render_section($path, $data());
     get_footer();
 }
 
@@ -15,8 +15,8 @@ function wtb_render_template($path, $data)
  */
 function wtb_render_section($path, $data)
 {
-    if (defined('wtb_MODE')) {
-        if (constant("wtb_MODE") == 'NO_VIEW') {
+    if (defined('WTB_MODE')) {
+        if (constant("WTB_MODE") == 'NO_VIEW') {
             echo $path;
             dd($data, true);
         }
