@@ -31,3 +31,10 @@ add_filter('show_admin_bar', '__return_false');
  * Adding thumbnails in post
  */
 add_theme_support('post-thumbnails', array('post','page'));
+
+/**
+ * Remove Editor in Page post type
+ */
+add_action('admin_init', function () {
+    remove_post_type_support('page', 'editor');
+});
