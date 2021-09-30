@@ -1,0 +1,7 @@
+.acf-map {
+    width: 100%;
+    height: 100%;
+}
+.acf-map img {
+    max-width: inherit !important;
+}
