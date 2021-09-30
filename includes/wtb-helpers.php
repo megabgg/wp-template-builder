@@ -100,7 +100,7 @@ function wtb_get_attachment($attachment_id, $size = 'large')
         'url' => wp_get_attachment_image_url($attachment_id, $size),
         'srcset' => wp_get_attachment_image_srcset($attachment_id, $size),
         'sizes' => wp_get_attachment_image_sizes($attachment_id, $size),
-        'meta' => get_post_meta($attachment_id, '_wp_attachment_image_alt', true)
+        'alt' => get_post_meta($attachment_id, '_wp_attachment_image_alt', true)
     ];
 }
 
