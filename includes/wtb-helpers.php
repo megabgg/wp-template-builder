@@ -3,11 +3,11 @@
 /**
  * Rendering html template
  */
-function wtb_render_template($path, $data)
+function wtb_render_template($path, $data, $header_template = '', $footer_template='')
 {
-    get_header();
+    get_header($header_template);
     wtb_render_section($path, $data());
-    get_footer();
+    get_footer($footer_template);
 }
 
 /**
