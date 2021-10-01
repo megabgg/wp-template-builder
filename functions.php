@@ -3,6 +3,7 @@
 $include_file_names = [
     'post-types',
     'admin',
+    'common',
     'actions',
     'wtb-helpers',
     'modules',
