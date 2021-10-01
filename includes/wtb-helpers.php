@@ -156,3 +156,23 @@ function wtb_get_paginate_links()
         ];
     }, $paginate_raw);
 }
+
+/**
+ * Get pagination link in post
+ * @param string(previous|next)
+ * @return array
+ */
+function wtb_get_pagination_in_post($mode)
+{
+    if (!in_array($mode, ['previous', 'next']))
+        return;
+
+    $page = $mode === 'previous' ? get_previous_post() : get_next_post();
+    if (is_object($page) && !empty($page->ID)) {
+        return [
+            'url' => get_the_permalink($page->ID),
+            'title' => get_the_title($page->ID)
+        ];
+    }
+    return;
+}
