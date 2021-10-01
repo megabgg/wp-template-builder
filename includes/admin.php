@@ -33,6 +33,11 @@ add_filter('show_admin_bar', '__return_false');
 add_theme_support('post-thumbnails', array('post','page'));
 
 /**
+ * Adding title in wp_head
+ */
+add_theme_support( 'title-tag' );
+
+/**
  * Remove Editor in Page post type
  */
 add_action('admin_init', function () {
