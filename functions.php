@@ -7,6 +7,7 @@ $include_file_names = [
     'actions',
     'wtb-helpers',
     'modules',
+    'query-filters',
     'data-filters',
     'api',
     'ajax',
