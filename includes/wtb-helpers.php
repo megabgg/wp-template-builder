@@ -147,6 +147,10 @@ function wtb_get_paginate_links()
         'type' => 'array'
     ));
 
+    if(!is_array($paginate_raw)){
+        return [];
+    }
+
     return array_map(function ($item) {
         $url = preg_match('/href="(.+)"/', $item, $match) ? $match[1] : '';
         $anchor = preg_match('/<([\w]+)[^>]*>(.*?)<\/\1>/', $item, $match) ? $match[2] : '';
